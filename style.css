@@ -2,3 +2,90 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+.todo{
+    height: auto;
+    width: 300px;
+    /* border: 1px solid black; */
+    margin: 10px;
+    background-color: white;
+}
+.todo-content{
+    margin: 10px;
+}
+.heading{
+    margin:20px 0px 20px 0px;
+    font-size: 1.5rem;
+}
+.todo-card{
+    height: 150px;
+    width: 280px;
+    background-color: #dedfe1;
+    border: 1px solid rgb(219, 214, 214);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.button{
+    height: 50px;
+    width: 280px;
+    background-color: rgb(80, 75, 75);
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;            
+}
+.card-hed{
+    font-size: 22px;
+    font-weight: bold;
+}
+.card-dec{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+.card-det{
+    font-size: 15px;
+    /* margin: 10px 0px; */
+}
+.card{
+
+    /* margin: 10px; */
+    /* background-color: red; */
+}
+/* .todo-card{
+    background-color: yellow;
+} */
+.card-content{
+    margin: 20px 10px 20px 10px ;
+    /* line-height: 10px; */
+    /* background-color: green; */
+}
+.badge{
+    font-size: 12px;
+    display: inline;
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: rgb(229, 42, 42);
+    color: white;
+}
+.card-det{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.time{
+    height: 18px;
+    width: 18;
+    font-weight: bold;
+    margin-right: 5px;
+}
