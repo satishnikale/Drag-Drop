@@ -3,167 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taskify</title>
+    <title>Task Board</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
 </head>
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Task Board</title>
-      <link rel="stylesheet" href="styles.css">
-      <style>
-        
-      </style>
-    </head>
-    <body>
-     <div class="main-container">
-        <div class="todo">
-            <div class="todo-content">
-                <div class="heading">To Do</div>
+    <div class="container">
+        <div class="grid">
 
-                <!-- main card  -->
-                <div class="card">
-                    <div class="todo-card">
-                        <div class="card-content">
-
-                            <div class="card-hed">
-                                Go to Gym
-                            </div>
-                            <div class="card-dec">
-                                go to gym at 8
-                            </div>
-
-                            <div class="card-det">
-                                <div class="badge">Urgent</div>
-                                <div class="datitime" style="display: flex; align-items: center;">
-                                    <img class="time" src="time.svg" alt="">
-                                    <p class="">july 31, 2024</p>
-                                </div>
-                                <div class="date">1hr ago</div>
-                            </div>
-                        </div>
+            <!-- To Do Section -->
+            <div class="section">
+                <h2>To Do</h2>
+                <div id="left">
+                <!-- actual cards to drap and drop 1 -->
+                <div class="task-card" draggable="true">
+                    <h3>Go to Gym</h3>
+                    <p>go to gym at 8</p>
+                    <div class="details">
+                        <span class="urgent">Urgent</span>
+                        <span>July 31, 2024</span>
+                        <span>1hr ago</span>
                     </div>
                 </div>
-                <div class="todo-card"></div>
-                <div class="todo-card"></div>
-                <div class="button"> Add New <span>+</span> </div>
-            </div>
-        </div>
-
-        <!-- In Progress Column -->
-
-        <div class="todo">
-            <div class="todo-content">
-                <div class="heading">In Progress</div>
-
-                <!-- main card  -->
-                <div class="card">
-                    <div class="todo-card">
-                        <div class="card-content">
-
-                            <div class="card-hed">
-                                Go to Gym
-                            </div>
-                            <div class="card-dec">
-                                go to gym at 8
-                            </div>
-
-                            <div class="card-det">
-                                <div class="badge">Urgent</div>
-                                <div class="datitime" style="display: flex; align-items: center;">
-                                    <img class="time" src="time.svg" alt="">
-                                    <p class="">july 31, 2024</p>
-                                </div>
-                                <div class="date">1hr ago</div>
-                            </div>
-                        </div>
+                <!-- actual cards to drap and drop 2 -->
+                <div class="task-card" draggable="true">
+                    <h3>Go to Gym</h3>
+                    <p>go to gym at 8</p>
+                    <div class="details">
+                        <span class="urgent">Urgent</span>
+                        <span>July 31, 2024</span>
+                        <span>1hr ago</span>
                     </div>
                 </div>
-                <div class="todo-card"></div>
-                <div class="todo-card"></div>
-                <div class="button"> Add New <span>+</span> </div>
-            </div>
-        </div>
-
-        <!-- Under Review -->
-
-        <div class="todo">
-            <div class="todo-content">
-                <div class="heading">Under Review</div>
-
-                <!-- main card  -->
-                <div class="card">
-                    <div class="todo-card">
-                        <div class="card-content">
-
-                            <div class="card-hed">
-                                Go to Gym
-                            </div>
-                            <div class="card-dec">
-                                go to gym at 8
-                            </div>
-
-                            <div class="card-det">
-                                <div class="badge">Urgent</div>
-                                <div class="datitime" style="display: flex; align-items: center;">
-                                    <img class="time" src="time.svg" alt="">
-                                    <p class="">july 31, 2024</p>
-                                </div>
-                                <div class="date">1hr ago</div>
-                            </div>
-                        </div>
+                <!-- actual cards to drap and drop 3 -->
+                <div class="task-card" draggable="true">
+                    <h3>Go to Gym</h3>
+                    <p>go to gym at 8</p>
+                    <div class="details">
+                        <span class="urgent">Urgent</span>
+                        <span>July 31, 2024</span>
+                        <span>1hr ago</span>
                     </div>
                 </div>
-                <div class="todo-card"></div>
-                <div class="todo-card"></div>
-                <div class="button"> Add New <span>+</span> </div>
-            </div>
-        </div>
-
-        <!-- Finished -->
-
-        <div class="todo">
-            <div class="todo-content">
-                <div class="heading">To Do</div>
-
-                <!-- main card  -->
-                <div class="card">
-                    <div class="todo-card">
-                        <div class="card-content">
-
-                            <div class="card-hed">
-                                Go to Gym
-                            </div>
-                            <div class="card-dec">
-                                go to gym at 8
-                            </div>
-
-                            <div class="card-det">
-                                <div class="badge">Urgent</div>
-                                <div class="datitime" style="display: flex; align-items: center;">
-                                    <img class="time" src="time.svg" alt="">
-                                    <p class="">july 31, 2024</p>
-                                </div>
-                                <div class="date">1hr ago</div>
-                            </div>
-                        </div>
+                <!-- actual cards to drap and drop 4 -->
+                <div class="task-card" draggable="true">
+                    <h3>Go to Gym</h3>
+                    <p>go to gym at 8</p>
+                    <div class="details">
+                        <span class="urgent">Urgent</span>
+                        <span>July 31, 2024</span>
+                        <span>1hr ago</span>
                     </div>
                 </div>
-                <div class="todo-card"></div>
-                <div class="todo-card"></div>
-                <div class="button"> Add New <span>+</span> </div>
+            </div>
+                <!-- Add New card in the div  -->
+                <a href="#" class="add-new">Add New+</a>
+            </div>
+
+            <!-- In Progress Section -->
+            <div class="section">
+                <h2>Finished</h2>
+                <div id="right">
+                
+            </div>
+                <!-- <a href="#" class="add-new">Add New+</a> -->
             </div>
         </div>
+    </div>
 
-     </div>
-    </body>
-    </html>
-    
+    <script src="index.js"></script>
 </body>
 </html>

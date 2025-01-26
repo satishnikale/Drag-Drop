@@ -1,0 +1,38 @@
+let cards = document.getElementsByClassName("task-card");
+let rightBox = document.getElementById("right");
+let leftBox = document.getElementById("left");
+
+for(let element of cards){
+    element.addEventListener("dragstart", function(e){
+        let selected = e.target;
+
+        rightBox.addEventListener("dragover", function(e){
+            e.preventDefault();
+        })
+
+        rightBox.addEventListener("drop", function(e){
+            e.preventDefault();
+            rightBox.appendChild(selected);
+            selected = null;
+        })
+
+        // this is gropping into left box 
+
+        leftBox.addEventListener("dragover", function(e){
+            e.preventDefault();
+        })
+
+        leftBox.addEventListener("drop", function(e){
+            e.preventDefault();
+            leftBox.appendChild(selected);
+            selected = null;
+        })
+    })
+};
+
+
+
+
+console.log(rightBox);
+// console.log(leftBox);
+console.log(cards);
