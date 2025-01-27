@@ -16,9 +16,14 @@ body {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
 }
 
 @media (min-width: 768px) {
@@ -33,6 +38,7 @@ body {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 90vh;
+    width: 40%;
 }
 
 .section h2 {
@@ -77,6 +83,14 @@ body {
     color: #e63946;
     font-weight: bold;
 }
+.task-card .details span.low {
+    color: #272324;
+    font-weight: bold;
+}
+.task-card .details span.medium {
+    color: rgb(207, 111, 23);
+    font-weight: bold;
+}
 
 .add-new {
     display: block;
@@ -94,6 +108,8 @@ body {
     background: #555;
 }
 
+
+
 #left{
     height: 85%;
     width: 100%;
@@ -102,3 +118,57 @@ body {
    height: 100%;
    width: 100%;
 }
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+  }
+  
+  .form-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  form select {
+    cursor: pointer;
+  }
+  
+  .add-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .add-btn:hover {
+    background-color: #444;
+  }
+  

@@ -8,13 +8,33 @@
 </head>
 <body>
     <div class="container">
+        
         <div class="grid">
-
+            <!-- Add todo Section  -->
+            <div class="card">
+                <h3 class="form-title">Add New To-Do</h3>
+                <form id="todo-form">
+                  <label for="todo-heading">To-Do Heading:</label>
+                  <input type="text" id="todo-heading" name="heading" placeholder="Enter to-do heading" required>
+            
+                  <label for="todo-description">To-Do Description:</label>
+                  <textarea id="todo-description" name="description" placeholder="Enter to-do description" rows="3" required></textarea>
+            
+                  <label for="todo-priority">Priority:</label>
+                  <select id="todo-priority" name="priority" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="urgent">Urgent</option>
+                  </select>            
+                  <button type="submit" id="addTodo" class="add-btn">Add To-Do</button>
+                </form>
+              </div>
             <!-- To Do Section -->
             <div class="section">
                 <h2>To Do</h2>
                 <div id="left">
                 <!-- actual cards to drap and drop 1 -->
+
                 <div class="task-card" draggable="true">
                     <h3>Go to Gym</h3>
                     <p>go to gym at 8</p>
@@ -23,40 +43,8 @@
                         <span>July 31, 2024</span>
                         <span>1hr ago</span>
                     </div>
-                </div>
-                <!-- actual cards to drap and drop 2 -->
-                <div class="task-card" draggable="true">
-                    <h3>Go to Gym</h3>
-                    <p>go to gym at 8</p>
-                    <div class="details">
-                        <span class="urgent">Urgent</span>
-                        <span>July 31, 2024</span>
-                        <span>1hr ago</span>
-                    </div>
-                </div>
-                <!-- actual cards to drap and drop 3 -->
-                <div class="task-card" draggable="true">
-                    <h3>Go to Gym</h3>
-                    <p>go to gym at 8</p>
-                    <div class="details">
-                        <span class="urgent">Urgent</span>
-                        <span>July 31, 2024</span>
-                        <span>1hr ago</span>
-                    </div>
-                </div>
-                <!-- actual cards to drap and drop 4 -->
-                <div class="task-card" draggable="true">
-                    <h3>Go to Gym</h3>
-                    <p>go to gym at 8</p>
-                    <div class="details">
-                        <span class="urgent">Urgent</span>
-                        <span>July 31, 2024</span>
-                        <span>1hr ago</span>
-                    </div>
-                </div>
+                </div>                
             </div>
-                <!-- Add New card in the div  -->
-                <a href="#" class="add-new">Add New+</a>
             </div>
 
             <!-- In Progress Section -->
@@ -65,7 +53,6 @@
                 <div id="right">
                 
             </div>
-                <!-- <a href="#" class="add-new">Add New+</a> -->
             </div>
         </div>
     </div>
